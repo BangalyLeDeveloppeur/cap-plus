@@ -1,0 +1,18 @@
+{
+  "name": "devcap-lus",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm start --prefix backend\" \"npm run dev --prefix frontend\"",
+    "backend": "npm start --prefix backend",
+    "frontend": "npm run dev --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
