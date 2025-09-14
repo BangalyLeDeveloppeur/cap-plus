@@ -1,1 +1,79 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  font-family: "font-1", sans-serif;
+  padding: 30px 50px;
+}
+body a {
+  text-decoration: none;
+}
+
+li {
+  color: black;
+  list-style-type: none;
+  font-size: 1.3em;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navigation img {
+  height: 200px;
+}
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+.navigation ul .nav-active {
+  position: relative;
+}
+.navigation ul .nav-active::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgb(141, 136, 136);
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: anim 0.6s ease forwards;
+          animation: anim 0.6s ease forwards;
+}
+
+@-webkit-keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes anim {
+  to {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */

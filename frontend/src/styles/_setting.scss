@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$color-1: #61dafb;
+$color-2: salmon;
+$color-3: black;
+$white: rgb(255, 255, 255);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: $white;
+  font-family: $font-1;
+  padding: 30px 50px;
+  a {
+    text-decoration: none;
+  }
+}
+
+li {
+  color: $color-3;
+  list-style-type: none;
+  font-size: 1.3em;
+}
