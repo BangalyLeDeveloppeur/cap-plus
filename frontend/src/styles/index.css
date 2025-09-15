@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "font-1";
   src: url(../assets/fonts/DMSerifDisplay-Regular.ttf);
@@ -13,7 +14,6 @@
 
 body {
   font-family: "font-1", Arial, sans-serif;
-  padding: 2px 50px;
 }
 body a {
   text-decoration: none;
@@ -21,13 +21,15 @@ body a {
 }
 
 li {
+  font-weight: bold;
   color: black;
   list-style-type: none;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 li:hover {
   color: #014AB0;
+  font-size: 1em;
 }
 
 .navigation {
@@ -83,4 +85,65 @@ li:hover {
   to {
     width: 100%;
   }
+}
+.cadrebassin {
+  position: relative;
+  width: 100%;
+}
+
+.imgCadreBassin {
+  height: 900px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* garde les proportions sans déformation */
+}
+
+.savoirPlus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  background: #4dd3ed;
+  border-radius: 15px;
+  width: 180px;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.savoirPlus p {
+  margin: 0;
+}
+
+.savoirPlus:hover {
+  background: #014ab0;
+  font-size: 1em;
+}
+
+.savourer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-top: -280px;
+  margin-left: 20%;
+}
+.savourer p {
+  width: 56%;
+  font-size: 2.2em;
+  color: white;
 }/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,5 @@
 import React from "react";
+import Fraicheur from "../components/Fraicheur";
 
 
 const Home = () => {
@@ -6,8 +7,7 @@ const Home = () => {
 
   return (
     <div>
-       <h1>Bonjour</h1> 
-    
+    <Fraicheur/>
       
     </div>
   );

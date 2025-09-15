@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     width: 50%;
+    
 
     .nav-active {
       position: relative;
@@ -30,8 +31,11 @@
         animation: anim 0.6s ease forwards;
       }
     }
+    
   }
+  
 }
+
 
 // ✅ Place les keyframes en dehors des sélecteurs
 @keyframes anim {

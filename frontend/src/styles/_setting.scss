@@ -27,7 +27,7 @@ $white: #E5EDF7;
 
 body {
   font-family: $font-1;
-  padding: 2px 50px;
+ 
 
   a {
     text-decoration: none;
@@ -36,11 +36,13 @@ body {
 }
 
 li {
+  font-weight: bold;
   color: $color-3;
   list-style-type: none;
-  font-size: 1.3em;
-
+  font-size: 1.2em;
+  
 }
-li:hover{
+li:hover {
   color: $color-2;
+  font-size: 1em;
 }
