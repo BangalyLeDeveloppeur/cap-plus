@@ -1,13 +1,17 @@
 @font-face {
   font-family: "font-1";
-  src: url(../assets/fonts/Montserrat-Medium.ttf);
+  src: url(../assets/fonts/DMSerifDisplay-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
 }
 
-$font-1: "font-1", sans-serif;
-$color-1: #61dafb;
-$color-2: salmon;
+$font-1: "font-1", Arial, sans-serif;
+$font-2: "font-1", Arial, sans-serif;
+
+$color-1: #4DD3ED;
+$color-2: #014AB0;
 $color-3: black;
-$white: rgb(255, 255, 255);
+$white: #E5EDF7;
 
 @mixin verticalCenter {
   display: flex;
@@ -16,16 +20,18 @@ $white: rgb(255, 255, 255);
 }
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: $white;
   font-family: $font-1;
-  padding: 30px 50px;
+  padding: 2px 50px;
+
   a {
     text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -33,4 +39,8 @@ li {
   color: $color-3;
   list-style-type: none;
   font-size: 1.3em;
+
+}
+li:hover{
+  color: $color-2;
 }

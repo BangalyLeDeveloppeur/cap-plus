@@ -1,19 +1,23 @@
 @font-face {
   font-family: "font-1";
-  src: url(../assets/fonts/Montserrat-Medium.ttf);
+  src: url(../assets/fonts/DMSerifDisplay-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
 }
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background: rgb(255, 255, 255);
-  font-family: "font-1", sans-serif;
-  padding: 30px 50px;
+  font-family: "font-1", Arial, sans-serif;
+  padding: 2px 50px;
 }
 body a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -22,19 +26,22 @@ li {
   font-size: 1.3em;
 }
 
+li:hover {
+  color: #014AB0;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .navigation img {
-  height: 200px;
+  height: 170px;
 }
 .navigation ul {
   display: -webkit-box;
