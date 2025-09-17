@@ -14,7 +14,7 @@ app.use("/uploads", express.static("uploads")); // rendre les images accessibles
 // Routes API
 app.use("/api/users", userRoutes);
 app.use("/api/offres", offreRoutes);
-app.use("/api/photos", photoRoutes);
+app.use("/api/photos_accueil", photoRoutes);
 
 app.listen(PORT, () =>
   console.log(`🚀 API dispo sur http://localhost:${PORT}`)

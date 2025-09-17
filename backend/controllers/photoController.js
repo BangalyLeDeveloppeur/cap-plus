@@ -12,7 +12,7 @@ export const uploadPhoto = (req, res) => {
   const imagePath = `/uploads/${req.file.filename}`;
 
   // 💾 Enregistrer en base
-  const sql = "INSERT INTO photo_accueil (image, description) VALUES (?, ?)";
+  const sql = "INSERT INTO photos_accueil (image_url, description,date_ajout) VALUES (?, ?,NOW())";
   db.query(sql, [imagePath, description], (err, result) => {
     if (err) return res.status(500).json({ error: err });
     res.status(201).json({
@@ -26,7 +26,7 @@ export const uploadPhoto = (req, res) => {
 
 // 📌 Récupérer toutes les photos
 export const getPhotos = (req, res) => {
-  db.query("SELECT * FROM photo_accueil", (err, results) => {
+  db.query("SELECT * FROM photos_accueil", (err, results) => {
     if (err) return res.status(500).json({ error: err });
     res.json(results);
   });
