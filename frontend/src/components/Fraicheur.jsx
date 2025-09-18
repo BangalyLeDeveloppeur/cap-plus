@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-//import bassinPiscicole from "../assets/images/bassinPiscicole.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle as faSolidCircle } from "@fortawesome/free-solid-svg-icons";
-import { faCircle as faRegularCircle } from "@fortawesome/free-regular-svg-icons";
-//import PhotosAccueil from "./photoAccueil";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+//import bassinPiscicole from "../assets/images/bassinPiscicole.webp"
 
 const Fraicheur = () => {
   ///declarartion des mes states///
@@ -38,10 +37,10 @@ const Fraicheur = () => {
 
   ///fonction pour les slide
   const prevSlide = () => {
-    setcurIndex((prevIndex) => (prevIndex + 1) % photoTableAcueil.length);
+    setcurIndex((prevIndex) => (prevIndex -1 + photoTableAcueil.length)% photoTableAcueil.length);
   };
   const nexSlide = () => {
-    setcurIndex((nexIndex) => (prevIndex - 1) % photoTableAcueil.length);
+    setcurIndex((prevIndex) => (prevIndex + 1) % photoTableAcueil.length);
   };
 
   return (
@@ -61,9 +60,10 @@ const Fraicheur = () => {
       <div className="savourer">
         <button className="savoirPlus">En savoir plus</button>
         <div className="fac-circle">
-          <FontAwesomeIcon icon={faSolidCircle} />
-          <FontAwesomeIcon icon={faRegularCircle} />
-          <FontAwesomeIcon icon={faRegularCircle} />
+         <button onClick={nexSlide}><FontAwesomeIcon icon={faArrowLeft}/></button> 
+         <button onClick={prevSlide}><FontAwesomeIcon icon={faArrowRight} /></button> 
+          
+          
         </div>
       </div>
     </div>
