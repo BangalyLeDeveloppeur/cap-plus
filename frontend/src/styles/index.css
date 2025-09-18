@@ -21,10 +21,10 @@ body a {
 }
 
 li {
-  font-weight: bold;
+  letter-spacing: 0.1rem;
   color: black;
   list-style-type: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 li:hover {

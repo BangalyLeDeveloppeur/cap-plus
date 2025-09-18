@@ -36,10 +36,11 @@ body {
 }
 
 li {
-  font-weight: bold;
+ // font-weight: bold;
+ letter-spacing: 0.1rem;
   color: $color-3;
   list-style-type: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
   
 }
 li:hover {

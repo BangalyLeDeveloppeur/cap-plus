@@ -10,9 +10,9 @@ const PhotosAccueil = () => {
       .then((res) => setPhotos(res.data))
       .catch((err) => console.error(err));
   }, []);
-  
-  console.log(photos)
-  
+
+  console.log(photos);
+
   return (
     <div className="photos-accueil">
       {photos.map((photo) => (
