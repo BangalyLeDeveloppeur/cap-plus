@@ -62,9 +62,9 @@ const Fraicheur = () => {
 
       <div className="savourer">
         <button className="savoirPlus">En savoir plus</button>
-        <div className="fac-circle">
+        <div className="cadreFac">
           <button onClick={nexSlide}>
-            <FontAwesomeIcon icon={faArrowLeft} />
+            <FontAwesomeIcon icon={faArrowLeft}/>
           </button>
           <button onClick={prevSlide}>
             <FontAwesomeIcon icon={faArrowRight} />

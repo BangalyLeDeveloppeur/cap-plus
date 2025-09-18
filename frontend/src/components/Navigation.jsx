@@ -43,7 +43,7 @@ const Navigation = () => {
           to="/about"
           className={(nav) => (nav.isActive ? "nav-active" : " ")}
         >
-          <li> SE CONNCTER</li>
+          <li> SE CONNECTER</li>
         </NavLink>
         
       </ul>

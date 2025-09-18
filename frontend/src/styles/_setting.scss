@@ -38,12 +38,12 @@ body {
 li {
  // font-weight: bold;
  letter-spacing: 0.05rem;
-  color: $color-2;
+  color: $color-1;
   list-style-type: none;
   font-size: 1.3em;
   
 }
 li:hover {
-  color: $color-1;
+  color: $color-2;
   font-size: 1em;
 }
