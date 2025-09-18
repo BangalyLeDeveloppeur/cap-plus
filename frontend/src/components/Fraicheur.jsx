@@ -3,8 +3,6 @@ import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-//import bassinPiscicole from "../assets/images/bassinPiscicole.webp"
-
 const Fraicheur = () => {
   ///declarartion des mes states///
   const [photoTableAcueil, setphotoTableAccueil] = useState([]);
@@ -31,13 +29,16 @@ const Fraicheur = () => {
           ? (prevIndex + 1) % photoTableAcueil.length
           : 0
       );
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [photoTableAcueil]);
 
   ///fonction pour les slide
   const prevSlide = () => {
-    setcurIndex((prevIndex) => (prevIndex -1 + photoTableAcueil.length)% photoTableAcueil.length);
+    setcurIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + photoTableAcueil.length) % photoTableAcueil.length
+    );
   };
   const nexSlide = () => {
     setcurIndex((prevIndex) => (prevIndex + 1) % photoTableAcueil.length);
@@ -47,12 +48,14 @@ const Fraicheur = () => {
     <div className="c">
       <div className="cadrebassin">
         {photoTableAcueil.length > 0 && (
-          <div>
+          <div className="cadreImage">
             <img
               src={`http://localhost:5000${photoTableAcueil[curIndex].image_url}`}
               alt={photoTableAcueil[curIndex].description}
             />
+            <div className="cadreParagraphe">
             <p>{photoTableAcueil[curIndex].description}</p>
+            </div>
           </div>
         )}
       </div>
@@ -60,10 +63,12 @@ const Fraicheur = () => {
       <div className="savourer">
         <button className="savoirPlus">En savoir plus</button>
         <div className="fac-circle">
-         <button onClick={nexSlide}><FontAwesomeIcon icon={faArrowLeft}/></button> 
-         <button onClick={prevSlide}><FontAwesomeIcon icon={faArrowRight} /></button> 
-          
-          
+          <button onClick={nexSlide}>
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </button>
+          <button onClick={prevSlide}>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </button>
         </div>
       </div>
     </div>

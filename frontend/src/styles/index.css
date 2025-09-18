@@ -21,14 +21,14 @@ body a {
 }
 
 li {
-  letter-spacing: 0.1rem;
-  color: black;
+  letter-spacing: 0.05rem;
+  color: #014AB0;
   list-style-type: none;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 li:hover {
-  color: #014AB0;
+  color: #4DD3ED;
   font-size: 1em;
 }
 
@@ -86,17 +86,26 @@ li:hover {
     width: 100%;
   }
 }
-.cadrebassin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.imgCadreBassin {
+.cadreImage {
   height: 900px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover; /* garde les proportions sans déformation */
+}
+.cadreImage img {
+  height: 1000px;
+  width: 100%;
+}
+.cadreImage .cadreParagraphe {
+  width: 45%;
+  height: 80px;
+  margin-left: 30%;
+}
+.cadreImage p {
+  font-weight: bold;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: -500px;
 }
 
 .savoirPlus {
@@ -139,9 +148,7 @@ li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  margin-top: -290px;
-  margin-left: 20%;
+  margin-top: -260px;
 }
 .savourer p {
   width: 56%;

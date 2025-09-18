@@ -1,12 +1,23 @@
-.cadrebassin {
-  display: flex;
-  //position: relative;
-}
-
-.imgCadreBassin {
+.cadreImage {
   height: 900px;
-  width: 100%;
+  //width: 100%;
   object-fit: cover; /* garde les proportions sans déformation */
+  img {
+    height: 1000px;
+    width: 100%;
+  }
+  .cadreParagraphe {
+    width: 45%;
+    height: 80px;
+    margin-left: 30%;
+  }
+  p {
+    font-weight: bold;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -500px;
+  }
 }
 
 .savoirPlus {
@@ -36,9 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  margin-top: -290px;
-  margin-left: 20%;
+  margin-top: -260px;
 
   p {
     width: 56%;
@@ -63,4 +72,3 @@
     }
   }
 }
-
