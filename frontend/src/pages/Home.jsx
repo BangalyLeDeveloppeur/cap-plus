@@ -1,6 +1,6 @@
 import React from "react";
 import Fraicheur from "../components/Fraicheur";
-import PhotosAccueil from "../components/photoAccueil";
+//import PhotosAccueil from "../components/photoAccueil";
 
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
     <Fraicheur/>
-    <PhotosAccueil/>
+    
       
     </div>
   );
