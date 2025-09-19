@@ -3,9 +3,9 @@ import React from "react";
 const Offres = () => {
   return (
     <div>
-      <section>
-        <h1>Nos offres</h1>
-        <div className="barre"></div>
+      <section className="offres">
+        <h1 className="engagement-titre">Nos offres</h1>
+        <div className="bar-souligne-offre"></div>
         <div className="offres"></div>
       </section>
     </div>
