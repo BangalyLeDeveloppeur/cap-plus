@@ -1,16 +1,13 @@
 import React from "react";
 import Fraicheur from "../components/Fraicheur";
-//import PhotosAccueil from "../components/photoAccueil";
+import EngaCap from "../components/EngaCap";
 
 
 const Home = () => {
-  
-
   return (
     <div>
-    <Fraicheur/>
-    
-      
+      <Fraicheur />
+      <EngaCap/>
     </div>
   );
 };

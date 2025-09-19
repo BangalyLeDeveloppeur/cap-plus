@@ -92,8 +92,10 @@ li:hover {
      object-fit: cover; /* garde les proportions sans déformation */
 }
 .cadreImage img {
-  height: 950px;
+  height: 800px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* garde les proportions sans déformation */
 }
 .cadreImage .cadreParagraphe {
   width: 45%;
@@ -197,4 +199,14 @@ li:hover {
   font-size: 3rem;
   color: #4dd3ed;
   cursor: pointer;
+}
+
+.cadrebassin, .c {
+  height: 800px;
+}
+
+.engagement-paragraphe {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

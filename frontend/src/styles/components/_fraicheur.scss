@@ -3,8 +3,9 @@
   //width: 100%;
   object-fit: cover; /* garde les proportions sans déformation */
   img {
-    height: 950px;
+    height: 800px;
     width: 100%;
+    object-fit: cover; /* garde les proportions sans déformation */
   }
   .cadreParagraphe {
     width: 45%;
@@ -87,4 +88,7 @@
     color: #4dd3ed;
     cursor: pointer;
   }
+}
+.cadrebassin, .c{
+  height: 800px;
 }
