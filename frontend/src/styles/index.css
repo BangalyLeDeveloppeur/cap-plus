@@ -260,10 +260,45 @@ li:hover {
   height: 800px;
 }
 
-.engagement-paragraphe {
+.engagement {
+  margin: 150px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.engagement-titre {
+  color: #4dd3ed;
   font-weight: bold;
-  font-size: 1.5rem;
-  text-align: center;
+}
+
+.engagement-paragraphe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25%;
+  width: 55%;
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+
+.bar-souligne {
+  height: 2px;
+  width: 14%;
+  background: #014ab0;
 }
 
 .footer {
