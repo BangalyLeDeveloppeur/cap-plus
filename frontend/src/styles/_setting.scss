@@ -8,10 +8,10 @@
 $font-1: "font-1", Arial, sans-serif;
 $font-2: "font-1", Arial, sans-serif;
 
-$color-1: #4DD3ED;
-$color-2: #014AB0;
+$color-1: #4dd3ed;
+$color-2: #014ab0;
 $color-3: black;
-$white: #E5EDF7;
+$white: #e5edf7;
 
 @mixin verticalCenter {
   display: flex;
@@ -27,7 +27,6 @@ $white: #E5EDF7;
 
 body {
   font-family: $font-1;
- 
 
   a {
     text-decoration: none;
@@ -36,14 +35,15 @@ body {
 }
 
 li {
- // font-weight: bold;
- letter-spacing: 0.05rem;
+  // font-weight: bold;
+  letter-spacing: 0.05rem;
   color: $color-1;
   list-style-type: none;
   font-size: 1.3em;
-  
 }
 li:hover {
   color: $color-2;
-  font-size: 1em;
+ 
+
+  background: #f0f0f0;
 }

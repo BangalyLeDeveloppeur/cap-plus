@@ -1,0 +1,71 @@
+.footer {
+  background-color: #e5edf7;
+  padding: 50px 0;
+  margin-top: 100px;
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 230px;
+
+    h4 {
+      font-size: 1.5rem;
+      padding-bottom: 20px;
+      color: #333;
+    }
+  }
+
+  .footer-section {
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      letter-spacing: 0.05rem;
+      color: #000;
+    }
+  }
+
+  // ✅ Hover uniquement sur les liens rapides
+  .liens-rapides li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0077b6; // bleu par exemple
+    }
+  }
+
+  // 🚫 Pas d’effet hover sur l’adresse
+  .footer-section-adresse li {
+    cursor: default;
+    color: #000;
+    &:hover {
+      color: #000; // reste identique
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+  }
+
+  .footer-resaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+  }
+  .footer-reseaux {
+    display: flex
+;
+    justify-content: space-between;
+}
+}

@@ -22,14 +22,14 @@ body a {
 
 li {
   letter-spacing: 0.05rem;
-  color: #4DD3ED;
+  color: #4dd3ed;
   list-style-type: none;
   font-size: 1.3em;
 }
 
 li:hover {
-  color: #014AB0;
-  font-size: 1em;
+  color: #014ab0;
+  background: #f0f0f0;
 }
 
 .navigation {
@@ -41,6 +41,8 @@ li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 80px;
+  /* ✅ Effet soulignement animé */
 }
 .navigation img {
   height: 170px;
@@ -56,11 +58,42 @@ li:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
+  list-style: none;
 }
-.navigation ul .nav-active {
+.navigation ul li {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2rem;
+  /* ✅ Sous-menu */
+}
+.navigation ul li .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  gap: 5px;
+  top: 100%;
+  left: 90%;
+  list-style: none;
+  z-index: 1000;
+}
+.navigation ul li .submenu li {
+  padding: 5px 10px;
+}
+.navigation ul li .submenu li:hover {
+  background: #f0f0f0;
+}
+.navigation .nav-active {
   position: relative;
 }
-.navigation ul .nav-active::after {
+.navigation .nav-active::after {
   content: "";
   height: 2px;
   width: 0;
@@ -75,12 +108,34 @@ li:hover {
           animation: anim 0.6s ease forwards;
 }
 
+/* ✅ Chevron */
+.submenu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.chevron {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.chevron.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* ✅ Animation */
 @-webkit-keyframes anim {
   to {
     width: 100%;
   }
 }
-
 @keyframes anim {
   to {
     width: 100%;
@@ -209,4 +264,76 @@ li:hover {
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.footer {
+  background-color: #e5edf7;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+.footer .footer-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+  padding: 0 230px;
+}
+.footer .footer-columns h4 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  color: #333;
+}
+.footer .footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .footer-section li {
+  margin-bottom: 10px;
+  letter-spacing: 0.05rem;
+  color: #000;
+}
+.footer .liens-rapides li {
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.footer .liens-rapides li:hover {
+  color: #0077b6;
+}
+.footer .footer-section-adresse li {
+  cursor: default;
+  color: #000;
+}
+.footer .footer-section-adresse li:hover {
+  color: #000;
+}
+.footer .footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+.footer .footer-resaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+.footer .footer-reseaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }/*# sourceMappingURL=index.css.map */
