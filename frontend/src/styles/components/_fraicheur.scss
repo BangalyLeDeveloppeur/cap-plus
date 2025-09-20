@@ -8,16 +8,16 @@
     object-fit: cover; /* garde les proportions sans déformation */
   }
   .cadreParagraphe {
-    width: 45%;
-    height: 80px;
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   p {
     font-weight: bold;
     color: white;
     font-size: 3rem;
     text-align: center;
-    margin-top: -450px;
+    margin-top: -590px;
   }
 }
 
@@ -30,7 +30,7 @@
   border-radius: 15px;
   width: 180px;
   border: none;
-  margin-top: 30px;
+  margin-top: 60px;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -86,9 +86,12 @@
     margin-top: -300px;
     font-size: 3rem;
     color: #4dd3ed;
+    background: transparent;
+    border: none;
     cursor: pointer;
   }
 }
-.cadrebassin, .c{
+.cadrebassin,
+.c {
   height: 800px;
 }

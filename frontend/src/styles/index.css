@@ -153,16 +153,22 @@ li:hover {
      object-fit: cover; /* garde les proportions sans déformation */
 }
 .cadreImage .cadreParagraphe {
-  width: 45%;
-  height: 80px;
-  margin-left: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .cadreImage p {
   font-weight: bold;
   color: white;
   font-size: 3rem;
   text-align: center;
-  margin-top: -450px;
+  margin-top: -590px;
 }
 
 .savoirPlus {
@@ -180,7 +186,7 @@ li:hover {
   border-radius: 15px;
   width: 180px;
   border: none;
-  margin-top: 30px;
+  margin-top: 60px;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -253,10 +259,13 @@ li:hover {
   margin-top: -300px;
   font-size: 3rem;
   color: #4dd3ed;
+  background: transparent;
+  border: none;
   cursor: pointer;
 }
 
-.cadrebassin, .c {
+.cadrebassin,
+.c {
   height: 800px;
 }
 
@@ -397,4 +406,33 @@ li:hover {
   height: 2px;
   width: 5%;
   background: #014ab0;
+}
+
+.bar-souligne-choi {
+  height: 2px;
+  width: 18%;
+  background: #014ab0;
+}
+
+.choisi-paragraphe {
+  margin: 20px 0;
+  height: 200px;
+  width: 100%;
+  background: #014ab0;
+}
+.choisi-paragraphe p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 33%;
+  width: 35%;
+  padding: 20px 0;
+  color: white;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=index.css.map */
