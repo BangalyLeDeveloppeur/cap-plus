@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Apropos from "./pages/Apropos";
 import Layout from "./assets/Layout/Layout";
 import AdminPhotos from "./pages/AdminPhoto";
-import AdminOffre from "./pages/adminOffre";
+import Offres from "./pages/AdOffre";
 
 const Rooter = () => {
   return (
@@ -14,7 +14,7 @@ const Rooter = () => {
           <Route index element={<Home />} />
           <Route path="Apropos" element={<Apropos />} />
           <Route path="AdminPhoto" element={<AdminPhotos />} />
-          <Route path="AdminOffre" element={<AdminOffre/>} />
+          <Route path="AdminOffre" element={<Offres/>} />
         </Route>
       </Routes>
     </BrowserRouter>

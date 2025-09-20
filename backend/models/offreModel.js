@@ -1,8 +1,9 @@
 import db from "../config/db.js";
 
-const addOffre = (titre, description, image, callback) => {
-  const sql = "INSERT INTO offres (titre,description,image) VALUE (?,?,?)";
-  db.query(sql,[titre, description, image], callback);
+export const addOffre = (titre, description, image_url, callback) => {
+  const sql =
+    "INSERT INTO offres (titre, description, image_url) VALUES (?, ?, ?)";
+  db.query(sql, [titre, description, image_url], callback);
 };
 
 export const getAllOffres = (callback) => {
