@@ -7,7 +7,7 @@ export const uploadOffre = (req, res) => {
     return res.status(400).json({ error: "⚠️ Aucune image envoyée !" });
   }
 
-  const imagePath = `/uploads/${req.file.filename}`;
+  const imagePath =`/uploads/${req.file.filename}`;
 
   addOffre(titre, description, imagePath, (err, result) => {
     if (err) return res.status(500).json({ error: err });
