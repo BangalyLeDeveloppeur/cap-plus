@@ -4,7 +4,7 @@ import React from "react";
 
 
 
-const Apropos = ({ logement }) => {
+const Apropos = () => {
   return (
     <div>
       

@@ -5,6 +5,7 @@ import Apropos from "./pages/Apropos";
 import Layout from "./assets/Layout/Layout";
 import AdminPhotos from "./pages/AdminPhoto";
 import Offres from "./pages/AdOffre";
+import AdminTableGalerie from "./pages/AdminTableGalerie";
 
 const Rooter = () => {
   return (
@@ -14,7 +15,8 @@ const Rooter = () => {
           <Route index element={<Home />} />
           <Route path="Apropos" element={<Apropos />} />
           <Route path="AdminPhoto" element={<AdminPhotos />} />
-          <Route path="AdminOffre" element={<Offres/>} />
+          <Route path="AdminOffre" element={<Offres />} />
+          <Route path="AdminGalerie" element={<AdminTableGalerie />} />
         </Route>
       </Routes>
     </BrowserRouter>
