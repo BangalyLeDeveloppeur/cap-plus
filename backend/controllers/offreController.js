@@ -21,7 +21,7 @@ export const uploadOffre = (req, res) => {
   });
 };
 
-export const fetchOffres = (req, res) => {
+export const fetchOffres = (res) => {
   getAllOffres((err, results) => {
     if (err) return res.status(500).json({ error: err });
     res.json(results);

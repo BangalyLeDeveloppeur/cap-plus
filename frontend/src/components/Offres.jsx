@@ -24,20 +24,24 @@ const Offres = () => {
       <section className="offres">
         <h1 className="engagement-titre">Nos offres</h1>
         <div className="bar-souligne-offre"></div>
-        <div className="offres">
-          {/* Affichage des offres */}
-          <ul>
-            {tabOffre.map((offre) => (
-              <li key={offre.id}>
-                <h4>{offre.titre}</h4>
-                <p>{offre.description}</p>
-                <img
-                  src={`http://localhost:5000${offre.image_url}`}
-                  alt={offre.titre}
-                />
-              </li>
-            ))}
-          </ul>
+        <div className="tab-offres">
+
+        <div className="tab-offres">
+  {/* Affichage des offres */}
+  <ul>
+    {tabOffre.map((offre) => (
+      <li key={offre.id}>
+        <h4>{offre.titre}</h4>
+        <p>{offre.description}</p>
+        <img
+          src={`http://localhost:5000${offre.image_url}`}
+          alt={offre.titre}
+        />
+      </li>
+    ))}
+  </ul>
+</div>
+
         </div>
       </section>
     </div>
