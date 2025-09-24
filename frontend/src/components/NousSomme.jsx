@@ -1,5 +1,5 @@
 import React from "react";
-import Pisciculteur from "../assets/images/Pisciculteur dans bassin.png";
+import Pisciculteur from "../assets/images/PisciculteurBassin.png";
 
 const NousSomme = () => {
   return (
