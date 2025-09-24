@@ -22,18 +22,19 @@
 }
 
 .savoirPlus {
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  background: #4dd3ed;
-  border-radius: 15px;
   width: 180px;
+  margin-top: 64px;
+  background: #4dd3ed;
   border: none;
-  margin-top: 60px;
+  border-radius: 15px;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
+  transition: all 0.3s ease; /* animation douce */
 
   p {
     margin: 0;

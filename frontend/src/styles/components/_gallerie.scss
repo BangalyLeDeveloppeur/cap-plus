@@ -1,6 +1,42 @@
-.bar-souligne-galerie{
-    height: 2px;
+.bar-souligne-galerie {
+  height: 2px;
   width: 5%;
   background: #014ab0;
+}
+.galerie {
+  width: 85%;
+  //background: red;
+}
+.galerie img {
+  width: 100%;
+  border-radius: 50px;
+  height: 700px;
+  object-fit: cover;
+  text-align: center;
+  //margin: 30px;
+  padding: 25px 35px 0 72px;
+  //padding: 50px 171px 0 115px;
+}
+.galerie h2 {
+  display: none;
+}
+.savoirPlusGal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 180px;
+  margin-top: -80px;
+  background: #4dd3ed;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* animation douce */
+}
 
+.savoirPlusGal:hover {
+  background: #014ab0;
+  transform: scale(1.05); /* effet zoom élégant */
 }
