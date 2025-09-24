@@ -41,11 +41,11 @@ li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   /* ✅ Effet soulignement animé */
 }
 .navigation img {
-  height: 270px;
+  height: 200px;
 }
 .navigation ul {
   display: -webkit-box;

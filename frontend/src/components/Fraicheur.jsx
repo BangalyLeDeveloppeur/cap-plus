@@ -4,69 +4,66 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Fraicheur = () => {
-  ///declarartion des mes states///
-  const [photoTableAcueil, setphotoTableAccueil] = useState([]);
-  const [curIndex, setcurIndex] = useState(0);
+  const [photosAccueil, setPhotosAccueil] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const fetchAccueil = async () => {
       try {
-        const resp = await axios.get(
-          "http://localhost:5000/api/photos_accueil"
-        );
-        setphotoTableAccueil(resp.data);
+        const resp = await axios.get("http://localhost:5000/api/photos_accueil");
+        setPhotosAccueil(resp.data);
       } catch (error) {
         console.error("Erreur lors de la récupération :", error);
       }
     };
     fetchAccueil();
   }, []);
-  ////gestion de mes slides///
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setcurIndex((prevIndex) =>
-        photoTableAcueil.length > 0
-          ? (prevIndex + 1) % photoTableAcueil.length
-          : 0
-      );
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [photoTableAcueil]);
 
-  ///fonction pour les slide
+  useEffect(() => {
+    if (photosAccueil.length === 0) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % photosAccueil.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [photosAccueil]);
+
   const prevSlide = () => {
-    setcurIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + photoTableAcueil.length) % photoTableAcueil.length
+    setCurrentIndex((prevIndex) =>
+      (prevIndex - 1 + photosAccueil.length) % photosAccueil.length
     );
   };
-  const nexSlide = () => {
-    setcurIndex((prevIndex) => (prevIndex + 1) % photoTableAcueil.length);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % photosAccueil.length);
   };
+
+  if (photosAccueil.length === 0) {
+    return <p>Chargement des images...</p>;
+  }
+
+  const currentPhoto = photosAccueil[currentIndex];
 
   return (
     <div className="c">
       <div className="cadrebassin">
-        {photoTableAcueil.length > 0 && (
-          <div className="cadreImage">
-            <img
-              src={`http://localhost:5000${photoTableAcueil[curIndex].image_url}`}
-              alt={photoTableAcueil[curIndex].description}
-            />
-            <div className="cadreParagraphe">
-            <p>{photoTableAcueil[curIndex].description}</p>
-            </div>
+        <div className="cadreImage">
+          <img
+            src={`http://localhost:5000${currentPhoto.image_url}`}
+            alt={currentPhoto.description}
+          />
+          <div className="cadreParagraphe">
+            <p>{currentPhoto.description}</p>
           </div>
-        )}
+        </div>
       </div>
 
       <div className="savourer">
         <button className="savoirPlus">En savoir plus</button>
         <div className="cadreFac">
-          <button onClick={nexSlide}>
-            <FontAwesomeIcon icon={faArrowLeft}/>
+          <button onClick={prevSlide} aria-label="Image précédente">
+            <FontAwesomeIcon icon={faArrowLeft} />
           </button>
-          <button onClick={prevSlide}>
+          <button onClick={nextSlide} aria-label="Image suivante">
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
