@@ -41,7 +41,7 @@ const Footer = () => {
           <img src={LogoOpenmo} alt="youtub" width="30" />
           <img src={LogoInsta} alt="instatgram" width="30" />
           </div>
-          <button className="savoirPlus">Contact</button>
+          <button className="savoirPlusF">Contact</button>
         </div>
       </div>
       <div className="footer-bottom">
