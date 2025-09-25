@@ -6,7 +6,7 @@
 }
 .propos-anonce {
   position: absolute;
-  top: 360px;
+  top: 370px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -17,11 +17,37 @@
   height: 280px;
   width: 50%;
   background: #014ab0;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .propos-anonce p {
   font-size: 2rem;
   padding: 0 70px;
   color: white;
+}
+.passion-paragraphe {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px 200px;
+  line-height: 2.3em;
+}
+
+.passion-paragraphe img {
+  object-fit: cover;
+  border-radius: 10px; /* optionnel */
+  height: 500px;
+  width: 90%;
+}
+
+.passion-paragraphe p {
+  font-size: 1.2rem;
+  margin-left: 2%; 
+}
+.passion{
+    margin-left: -50%;
+    //margin-top: -390px;
+}
+.pton{
+    width: 100%;
 }

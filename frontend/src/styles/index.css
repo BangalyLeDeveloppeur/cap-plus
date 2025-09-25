@@ -587,7 +587,7 @@ li:hover {
 
 .propos-anonce {
   position: absolute;
-  top: 360px;
+  top: 370px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -603,11 +603,44 @@ li:hover {
   height: 280px;
   width: 50%;
   background: #014ab0;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .propos-anonce p {
   font-size: 2rem;
   padding: 0 70px;
   color: white;
+}
+
+.passion-paragraphe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  padding: 30px 200px;
+  line-height: 2.3em;
+}
+
+.passion-paragraphe img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px; /* optionnel */
+  height: 500px;
+  width: 90%;
+}
+
+.passion-paragraphe p {
+  font-size: 1.2rem;
+  margin-left: 2%;
+}
+
+.passion {
+  margin-left: -50%;
+}
+
+.pton {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
