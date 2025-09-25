@@ -1,0 +1,27 @@
+.nous-conteneur {
+  img {
+    height: 800px;
+    width: 100%;
+  }
+}
+.propos-anonce {
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 280px;
+  width: 50%;
+  background: #014ab0;
+  border-radius: 20px;
+}
+
+.propos-anonce p {
+  font-size: 2rem;
+  padding: 0 70px;
+  color: white;
+}

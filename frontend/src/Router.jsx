@@ -17,19 +17,18 @@ const Rooter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="Apropos" element={<Apropos />} />
-          <Route path="AdminPhoto" element={<AdminPhotos />} />
-          <Route path="AdminOffre" element={<Offres />} />
-          <Route path="AdminGalerie" element={<AdminTableGalerie />} />
-          <Route path="Pisciculture" element={<Pisciculture />} />
-          <Route path="Formations" element={<Formation />} />
-          <Route path="contact" element={<Contact />} />
-
-          <Route path="galerie" element={<Galerie />} />
-          <Route path="mentorat" element={<Mentorat />} />
-          <Route path="pisciculturmaraichère" element={<Maraichage />} />
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="Apropos" element={<Apropos />}/>
+          <Route path="AdminPhoto" element={<AdminPhotos />}/>
+          <Route path="AdminOffre" element={<Offres/>}/>
+          <Route path="AdminGalerie" element={<AdminTableGalerie/>} />
+          <Route path="Pisciculture" element={<Pisciculture/>}/>
+          <Route path="Formations" element={<Formation/>}/>
+          <Route path="contact" element={<Contact/>}/>
+          <Route path="galerie" element={<Galerie/>}/>
+          <Route path="mentorat" element={<Mentorat/>}/>
+          <Route path="pisciculturmaraichère" element={<Maraichage/>} />
         </Route>
       </Routes>
     </BrowserRouter>

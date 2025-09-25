@@ -578,4 +578,36 @@ li:hover {
   padding: 20px 0;
   color: white;
   font-size: 1.2rem;
+}
+
+.nous-conteneur img {
+  height: 800px;
+  width: 100%;
+}
+
+.propos-anonce {
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 280px;
+  width: 50%;
+  background: #014ab0;
+  border-radius: 20px;
+}
+
+.propos-anonce p {
+  font-size: 2rem;
+  padding: 0 70px;
+  color: white;
 }/*# sourceMappingURL=index.css.map */

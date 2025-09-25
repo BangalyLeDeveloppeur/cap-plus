@@ -3,9 +3,9 @@ import Pisciculteur from "../assets/images/PisciculteurBassin.png";
 
 const NousSomme = () => {
   return (
-    <div>
+    <div className="nous-conteneur">
       <img src={Pisciculteur} alt="Pisciculteur dans bassin piscicole" />
-      <div className="apropos-anonce">
+      <div className="propos-anonce">
         <p>
           Nous sommes des éleveurs engagés à offrir des poissons sains,
           responsables et accessibles à tous.
