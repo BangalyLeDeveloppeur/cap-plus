@@ -6,6 +6,9 @@ const Equipe = () => {
       <div className="passion-titre">
         <h1>Equipe</h1>
         <div className="bar-souligne"></div>
+        <div className="equipe-contener">
+          <span>notre équipe</span>
+        </div>
       </div>
     </div>
   );

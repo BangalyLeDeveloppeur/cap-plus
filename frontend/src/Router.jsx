@@ -9,6 +9,9 @@ import AdminTableGalerie from "./pages/AdminTableGalerie";
 import Pisciculture from "./pages/Pisciculture";
 import Formation from "./pages/Formation";
 import Maraichage from "./pages/Maraichage";
+import Mentorat from "./pages/Mentorat";
+import Galerie from "./pages/Galerie";
+import Contact from "./components/Contact";
 
 const Rooter = () => {
   return (
@@ -22,7 +25,10 @@ const Rooter = () => {
           <Route path="AdminGalerie" element={<AdminTableGalerie />} />
           <Route path="Pisciculture" element={<Pisciculture />} />
           <Route path="Formations" element={<Formation />} />
-        
+          <Route path="contact" element={<Contact />} />
+
+          <Route path="galerie" element={<Galerie />} />
+          <Route path="mentorat" element={<Mentorat />} />
           <Route path="pisciculturmaraichère" element={<Maraichage />} />
         </Route>
       </Routes>
