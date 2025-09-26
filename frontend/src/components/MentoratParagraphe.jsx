@@ -2,11 +2,14 @@ import React from "react";
 
 const MentoratParagraphe = () => {
   return (
-    <div>
+    <div className="engagement">
+      
       <div className="passion-titre">
         <h1>Mentorat</h1>
-        <div className="bar-souligne"></div>
+        <div className="bar-souligne pton"></div>
       </div>
+      <div className="cap-plus-equilibre">
+
       <p>
         Chez CAP-PLUS, nous croyons qu’un bon accompagnement peut transformer
         une passion en réussite. À travers notre programme de mentorat en
@@ -18,6 +21,7 @@ const MentoratParagraphe = () => {
         pas seuls : nous marchons à vos côtés pour bâtir ensemble l’avenir de
         l’agrobusiness.
       </p>
+      </div>
     </div>
   );
 };

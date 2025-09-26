@@ -3,11 +3,11 @@ import Tunel from "../assets/images/tunelLumineux.png"
  
 const GalerieAccueil = () => {
   return (
-    <div>
+    <div className="nous-conteneur">
       <div>
         <img src={Tunel} alt="Photo reuinion" />
       </div>
-      <div className="apropos-anonce">
+      <div className="propos-anonce" >
         <p>Galerie</p>
       </div>
     </div>
