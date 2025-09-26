@@ -1,0 +1,55 @@
+.poisson-paragraphe {
+  margin-top: 20px;
+  width: 50%;
+  line-height: 2.3em;
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.passion-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 0 190px;
+  margin-left: 1.5%;
+  margin-bottom: 50px;
+}
+.passionParagraphe {
+  //background: red;
+  height: 500px;
+  width: 50%;
+  
+  p {
+      line-height: 1.5;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+}
+.passionImage {
+    // background: blue;
+    width: 50%;
+    
+    img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 20px;
+        padding: 10px 0;
+  }
+}
+
+
+.titre-tilapiaRouge {
+  font-size: 1.5rem;
+  margin-left: 55%;
+  font-weight: bold;
+}
+.titre h4 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.bar-souligne.nosPoisson {
+    width: 10%;
+}

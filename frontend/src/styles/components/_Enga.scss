@@ -1,8 +1,12 @@
 .engagement {
-  margin: 150px 0;
+  margin: 110px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+ .bar-souligne.nosPoisson {
+    width: 10%;
+}
 }
 .engagement-titre {
     color: #4dd3ed;
