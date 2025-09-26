@@ -715,4 +715,23 @@ li:hover {
   width: 70%;
   font-size: 1.5rem;
   line-height: 1.5;
+}
+
+.cap-plus-equilibre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.cap-plus-equilibre p {
+  text-align: center;
+  width: 70%;
 }/*# sourceMappingURL=index.css.map */

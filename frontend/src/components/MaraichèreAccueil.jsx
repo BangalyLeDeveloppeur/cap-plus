@@ -5,14 +5,17 @@ import Carrotte from "../assets/images/Carrotte.png";
 const MaraichèreAccueil = () => {
   return (
     <div>
-      <div>
+      <div className="nous-conteneur">
         <img src={Carrotte} alt="Photo Carrotte" />
-        <div className="apropos-anonce">
+        <div className="propos-anonce">
           <p>
             CAP-PLUS vous offre des légumes 100 % bio, frais et savoureux, pour
             allier goût et santé au naturel.
           </p>
         </div>
+      </div>
+      <div className="cap-plus-equilibre">
+
         <p>
           Dans sa volonté de promouvoir une alimentation saine et équilibrée,
           CAP-PLUS s’est engagée dans la production de légumes biologiques tels
