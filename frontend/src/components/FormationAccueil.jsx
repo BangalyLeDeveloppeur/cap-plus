@@ -2,9 +2,9 @@ import React from "react";
 import imagformation from "../assets/images/imageFormation.png"
 const FormationAccueil = () => {
   return (
-    <div>
+    <div className="nous-conteneur">
       <img src={imagformation} alt="Photo homme formation" />
-      <div className="apropos-anonce">
+      <div className="propos-anonce">
         <p>
           Transformons ensemble la passion de la pisciculture en réussite
           durable.

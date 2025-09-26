@@ -708,4 +708,11 @@ li:hover {
 
 .bar-souligne.nosPoisson {
   width: 10%;
+}
+
+.cap-plus {
+  margin-top: 50px;
+  width: 70%;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }/*# sourceMappingURL=index.css.map */

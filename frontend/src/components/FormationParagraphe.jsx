@@ -2,11 +2,12 @@ import React from "react";
 
 const FormationParagraphe = () => {
   return (
-    <div>
+    <div className="engagement">
       <div className="passion-titre">
         <h1>Formation</h1>
-        <div className="bar-souligne"></div>
+        <div className="bar-souligne pton"></div>
       </div>
+      <div className="cap-plus">
       <p>
         Vous êtes passionné par la pisciculture ? Alors, bienvenue chez
         CAP-PLUS. Nous sommes convaincus que le partage du savoir est la clé
@@ -19,6 +20,7 @@ const FormationParagraphe = () => {
         rentables et respectueuses de l’environnement. Avec CAP-PLUS,
         formez-vous aujourd’hui pour réussir demain.
       </p>
+      </div>
     </div>
   );
 };
