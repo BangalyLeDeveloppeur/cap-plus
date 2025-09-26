@@ -21,9 +21,11 @@ const Fraicheur = () => {
 
   useEffect(() => {
     if (photosAccueil.length === 0) return;
+
+    
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photosAccueil.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [photosAccueil]);
 

@@ -1,0 +1,78 @@
+.eng {
+    text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto; /* centrer horizontalement */
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4dd3ed;
+}
+
+.savoirPlusGal {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 160px;
+  background: #4dd3ed;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.savoirPlusGal:hover {
+  background: #014ab0;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .savoirPlusGal {
+    width: 140px;
+    font-size: 1rem;
+  }
+}

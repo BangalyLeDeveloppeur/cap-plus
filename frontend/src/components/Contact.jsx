@@ -1,19 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
   return (
-    <div>
-      <h1>contac</h1>
-      <span>Nom</span>
-      <div className="contact-nom"></div>
+    <div >
+      <h1 className="eng">Contact</h1>
+      <form className="contact-form">
+        
+        <label>
+          Nom
+          <input type="text" name="nom" placeholder="Votre nom" required/>
+        </label>
 
-      <span>Prenom</span>
-      <div className="contact-nom"></div>
-      <span>E-mail</span>
-      <div className="contact-nom"></div>
-      <span>Message</span>
-      <div className="contact-message"></div>
-      <button className="savoirPlusGal">Envoyer</button>
+        <label>
+          Prénom
+          <input type="text" name="prenom" placeholder="Votre prenom" required/>
+        </label>
+
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="Votre E-mail" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" placeholder="Votre message" rows="4" required readOnly />
+        </label>
+
+        <button type="submit" className="savoirPlusGal">
+          Envoyer
+        </button>
+      </form>
     </div>
   );
 };
