@@ -3,7 +3,9 @@ import cors from "cors";
 import userRoutes from "./routes/userRoute.js";
 import offreRoutes from "./routes/offresRoute.js";
 import photoRoutes from "./routes/photoRoutes.js";
-import galerieRoutes from "./routes/galerieRoute.js"; // ✅ pas le controller
+import galerieRoutes from "./routes/galerieRoute.js";
+import equipeRoutes from "./routes/equipeRoute.js";
+import ProduitRoutes from "./routes/produitRouter.js"; ///
 
 const app = express();
 const PORT = 5000;
@@ -17,7 +19,9 @@ app.use("/uploads", express.static("uploads")); // rendre les images accessibles
 app.use("/api/users", userRoutes);
 app.use("/api/offres", offreRoutes);
 app.use("/api/photos_accueil", photoRoutes);
-app.use("/api/galerie", galerieRoutes); // ✅
+app.use("/api/galerie", galerieRoutes);
+app.use("/api/equipe", equipeRoutes);
+app.use("/api/produit", ProduitRoutes);
 
 app.listen(PORT, () =>
   console.log(`🚀 API dispo sur http://localhost:${PORT}`)
