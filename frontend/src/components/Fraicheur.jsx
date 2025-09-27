@@ -7,42 +7,50 @@ const Fraicheur = () => {
   const [photosAccueil, setPhotosAccueil] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // ✅ Fonction pour récupérer les images
+  const fetchAccueil = async () => {
+    try {
+      const resp = await axios.get("http://localhost:5000/api/photos_accueil");
+      setPhotosAccueil(resp.data);
+    } catch (error) {
+      console.error("Erreur lors de la récupération :", error);
+    }
+  };
+
+  // ✅ On charge les images une seule fois au montage
   useEffect(() => {
-    const fetchAccueil = async () => {
-      try {
-        const resp = await axios.get("http://localhost:5000/api/photos_accueil");
-        setPhotosAccueil(resp.data);
-      } catch (error) {
-        console.error("Erreur lors de la récupération :", error);
-      }
-    };
     fetchAccueil();
   }, []);
 
+  // ✅ Défilement automatique toutes les 3 secondes
   useEffect(() => {
-    if (photosAccueil.length === 0) return;
-
-    
+    if (photosAccueil.length === 0) 
+      return;
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photosAccueil.length);
-    }, 4000);
-    return () => clearInterval(interval);
+    }, 3000);
+
+    return () => clearInterval(interval); // nettoyage
   }, [photosAccueil]);
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + photosAccueil.length) % photosAccueil.length
-    );
-  };
-
+  // ✅ Boutons suivant / précédent
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % photosAccueil.length);
   };
 
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + photosAccueil.length) % photosAccueil.length
+    );
+  };
+
+  // ✅ Gestion du "loading"
   if (photosAccueil.length === 0) {
     return <p>Chargement des images...</p>;
   }
 
+  // ✅ Image courante
   const currentPhoto = photosAccueil[currentIndex];
 
   return (

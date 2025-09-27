@@ -1,17 +1,20 @@
-
 .cadreImage {
-  height: 900px;
-  //width: 100%;
+  
+  width: 100%;
+  height: 800px;
   object-fit: cover; /* garde les proportions sans déformation */
+
   img {
-    height: 800px;
+    height: 100%;
     width: 100%;
     object-fit: cover; /* garde les proportions sans déformation */
+    
   }
   .cadreParagraphe {
     display: flex;
     justify-content: center;
     align-items: center;
+   
   }
   p {
     font-weight: bold;
@@ -21,7 +24,6 @@
     margin-top: -590px;
   }
 }
-
 .savoirPlus {
   display: flex;
   justify-content: center;
@@ -36,7 +38,6 @@
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease; /* animation douce */
-
   p {
     margin: 0;
   }
@@ -45,13 +46,11 @@
   background: #014ab0;
   font-size: 1em;
 }
-
 .savourer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -275px;
-
   p {
     width: 56%;
     font-weight: bolder;
@@ -64,12 +63,10 @@
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
-
   i {
     font-size: 24px;
     color: #ce1919;
     cursor: pointer;
-
     &:hover {
       transform: scale(1.2);
     }
@@ -80,7 +77,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-
   width: 100%;
   svg.svg-inline--fa.fa-arrow-left,
   svg.svg-inline--fa.fa-arrow-right,
