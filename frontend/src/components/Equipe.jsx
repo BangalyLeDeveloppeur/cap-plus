@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Equipe = () => {
+  const [tableEquipe, setTableEquipe] = useState({});
+
+  const getEquipe = () =>{
+
+  }
+
   return (
     <div className="engagement">
       <div className="passion-titre">

@@ -12,6 +12,7 @@ import Maraichage from "./pages/Maraichage";
 import Mentorat from "./pages/Mentorat";
 import Galerie from "./pages/Galerie";
 import Contact from "./components/Contact";
+import Equipe from "./pages/AdiminEquipe";
 
 const Rooter = () => {
   return (
@@ -29,6 +30,7 @@ const Rooter = () => {
           <Route path="galerie" element={<Galerie/>}/>
           <Route path="mentorat" element={<Mentorat/>}/>
           <Route path="pisciculturmaraichère" element={<Maraichage/>} />
+          <Route path="equipe" element={<Equipe/>} />
         </Route>
       </Routes>
     </BrowserRouter>
