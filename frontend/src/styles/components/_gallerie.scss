@@ -1,7 +1,7 @@
 .bar-souligne-galerie {
   height: 2px;
   width: 5%;
-  background: #014ab0;
+  background: #4dd3ed;
 }
 .galerie {
   width: 85%;
@@ -26,7 +26,7 @@
   align-items: center;
   height: 50px;
   width: 180px;
-  margin-top: -80px;
+  margin-top: -180px;
   background: #4dd3ed;
   border: none;
   border-radius: 15px;
@@ -39,7 +39,4 @@
 .savoirPlusGal:hover {
   background: #014ab0;
   transform: scale(1.05); /* effet zoom élégant */
-}
-button.savoirPlusGal {
-    margin-top: 0;
 }

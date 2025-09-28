@@ -15,7 +15,7 @@ const Gallerie = () => {
   return (
     <section className="offres">
       <h1 className="engagement-titre">Galerie</h1>
-      <div className="bar-souligne-galerie"></div>
+      <div className="bar-souligne-choi"></div>
 
       {tablegal.slice(0, 1).map((dg) => (
         <div key={dg.id} className="galerie">

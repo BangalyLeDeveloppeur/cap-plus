@@ -4,26 +4,22 @@
   flex-direction: column;
   align-items: center;
 
- .bar-souligne.nosPoisson {
+  .bar-souligne.nosPoisson {
     width: 10%;
-}
+  }
 }
 .engagement-titre {
-    color: #4dd3ed;
   font-weight: bold;
 }
 .engagement-paragraphe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 25%;
+  text-align: center;
   width: 55%;
   padding: 20px 0;
 
-  font-size: 1.2rem;
+  font-size: 3rem;
 }
 .bar-souligne {
   height: 2px;
   width: 14%;
-  background: #014ab0;
+  background: #4dd3ed;
 }

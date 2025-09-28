@@ -290,30 +290,20 @@ li:hover {
 }
 
 .engagement-titre {
-  color: #4dd3ed;
   font-weight: bold;
 }
 
 .engagement-paragraphe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 25%;
+  text-align: center;
   width: 55%;
   padding: 20px 0;
-  font-size: 1.2rem;
+  font-size: 3rem;
 }
 
 .bar-souligne {
   height: 2px;
   width: 14%;
-  background: #014ab0;
+  background: #4dd3ed;
 }
 
 .footer {
@@ -434,7 +424,7 @@ li:hover {
 .bar-souligne-offre {
   height: 2px;
   width: 7%;
-  background: #014ab0;
+  background: #4dd3ed;
 }
 
 .tab-offres ul {
@@ -505,7 +495,7 @@ li:hover {
 .bar-souligne-galerie {
   height: 2px;
   width: 5%;
-  background: #014ab0;
+  background: #4dd3ed;
 }
 
 .galerie {
@@ -538,7 +528,7 @@ li:hover {
           align-items: center;
   height: 50px;
   width: 180px;
-  margin-top: -80px;
+  margin-top: -180px;
   background: #4dd3ed;
   border: none;
   border-radius: 15px;
@@ -555,19 +545,15 @@ li:hover {
           transform: scale(1.05); /* effet zoom élégant */
 }
 
-button.savoirPlusGal {
-  margin-top: 0;
-}
-
 .bar-souligne-choi {
   height: 2px;
   width: 18%;
-  background: #014ab0;
+  background: #4dd3ed;
 }
 
 .choisi-paragraphe {
-  margin: 20px 0;
-  height: 200px;
+  margin: 150px 0;
+  height: 300px;
   width: 100%;
   background: #014ab0;
 }
@@ -581,11 +567,21 @@ button.savoirPlusGal {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 33%;
-  width: 35%;
   padding: 20px 0;
   color: white;
   font-size: 1.2rem;
+}
+.choisi-paragraphe .choisir-conteneur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nous-conteneur img {
