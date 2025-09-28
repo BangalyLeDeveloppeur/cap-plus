@@ -7,7 +7,7 @@ const FormationParagraphe = () => {
         <h1>Formation</h1>
         <div className="bar-souligne pton"></div>
       </div>
-      <div className="cap-plus">
+      <div className="cap-plus-equilibre">
       <p>
         Vous êtes passionné par la pisciculture ? Alors, bienvenue chez
         CAP-PLUS. Nous sommes convaincus que le partage du savoir est la clé

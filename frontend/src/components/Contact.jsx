@@ -26,7 +26,7 @@ const Contact = () => {
           <textarea name="message" placeholder="Votre message" rows="4" required readOnly />
         </label>
 
-        <button type="submit" className="savoirPlusGal">
+        <button type="submit" className="envoyer">
           Envoyer
         </button>
       </form>

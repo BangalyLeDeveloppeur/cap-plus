@@ -778,12 +778,9 @@ li:hover {
           flex-direction: column;
   gap: 15px;
   max-width: 500px;
-  margin: 0 auto; /* centrer horizontalement */
+  margin: 0 auto;
   padding: 20px;
-  background: #f9f9f9;
   border-radius: 12px;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
@@ -840,6 +837,33 @@ li:hover {
 }
 
 .savoirPlusGal:hover {
+  background: #014ab0;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.envoyer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  width: 160px;
+  background: #4dd3ed;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.envoyer:hover {
   background: #014ab0;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);

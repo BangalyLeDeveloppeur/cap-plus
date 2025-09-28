@@ -7,7 +7,7 @@ const PicciculturePoisson = () => {
         <h1>Pisciculture</h1>
         <div className="bar-souligne pton "></div>
       </div>
-      <div className="poisson-paragraphe">
+      <div className="cap-plus-equilibre">
         <p>
           Chez CAP-PLUS, nos poissons sont élevés avec passion et nourris avec
           des aliments de qualité dans nos propres bassins. Bien plus que des
