@@ -3,15 +3,13 @@ import Main from "../assets/images/main.png";
 
 const Passion = () => {
   return (
-    <div className="engagement">
+    <div className="engagemen">
       <div className="passion-titre">
         <h1>Apropos de nous</h1>
-        <div className="bar-souligne pton">
-
-        </div>
+        <div className="bar-souligne"></div>
       </div>
-      <div className="passion-paragraphe">
-        <div className="apropos-paragraphe">
+      <section className="passion-para">
+        <div className="passionParagraphe">
           <p>
             Nous, Bangaly et Nina, avons transformé notre passion en une
             véritable vocation. Animés par l’amour de l’agriculture et de la
@@ -28,8 +26,10 @@ const Passion = () => {
             local et à la sécurité alimentaire.
           </p>
         </div>
-        <img src={Main} />
-      </div>
+        <div className="passionImage">
+          <img src={Main} />
+        </div>
+      </section>
       <button className="savoirPlusGal passion">En savoir plus</button>
     </div>
   );

@@ -26,29 +26,23 @@
   padding: 0 70px;
   color: white;
 }
-.passion-paragraphe {
+
+.passion {
+ margin-left: 25%;
+  //margin-top: -390px;
+}
+.pton {
+  width: 100%;
+}
+.apropos-paragraphe {
+  width: 50%;
+}
+.passion-titre {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding: 30px 200px;
-  line-height: 2.3em;
+  flex-direction: column;
+  align-items: center;
+      margin: 0 0 20px;
 }
-
-.passion-paragraphe img {
-  object-fit: cover;
-  border-radius: 10px; /* optionnel */
-  height: 500px;
-  width: 90%;
-}
-
-.passion-paragraphe p {
-  font-size: 1.2rem;
-  margin-left: 2%; 
-}
-.passion{
-    margin-left: -50%;
-    //margin-top: -390px;
-}
-.pton{
-    width: 100%;
+.engagemen{
+  margin: 150px 0;
 }
