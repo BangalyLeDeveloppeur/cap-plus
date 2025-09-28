@@ -200,7 +200,8 @@ li:hover {
 
 .savoirPlus:hover {
   background: #014ab0;
-  font-size: 1em;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .savourer {
@@ -456,7 +457,7 @@ li:hover {
 }
 
 /* Texte sur l’image */
-.tab-offres h4,
+.tab-offres h2,
 .tab-offres p {
   position: absolute;
   left: 50%;
@@ -468,7 +469,7 @@ li:hover {
 }
 
 /* Titre centré vers le haut */
-.tab-offres h4 {
+.tab-offres h2 {
   top: 50%;
   font-size: 2rem;
   font-weight: bold;
