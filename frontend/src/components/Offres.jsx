@@ -31,7 +31,7 @@ const Offres = () => {
   <ul>
     {tabOffre.map((offre) => (
       <li key={offre.id}>
-        <h4>{offre.titre}</h4>
+        <h2>{offre.titre}</h2>
         <p>{offre.description}</p>
         <img
           src={`http://localhost:5000${offre.image_url}`}

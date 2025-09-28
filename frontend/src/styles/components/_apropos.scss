@@ -46,3 +46,27 @@
 .engagemen{
   margin: 150px 0;
 }
+
+.equipe-contener li {
+  margin: 20px 0;   
+  list-style: none;
+  text-align: center;    
+}
+
+.infos {
+  display: flex;         
+  justify-content: center; 
+  gap: 20px;            
+  margin-bottom: 10px;   
+}
+
+.infos span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.equipe-contener img {
+ 
+  border-radius: 50%;  
+  object-fit: cover;
+}
