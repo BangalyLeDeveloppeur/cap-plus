@@ -25,7 +25,7 @@ const Offres = () => {
       <section className="offres">
         <h1 className="engagement-titre">Nos offres</h1>
         <div className="bar-souligne-choi"></div>
-        <div className="tab-offres">
+        
           <div className="tab-offres">
             {/* Affichage des offres */}
             <section id="offre">
@@ -50,6 +50,7 @@ const Offres = () => {
                           src={`http://localhost:5000${offre.image_url}`}
                           alt={offre.titre}
                         />
+                        
                       </Link>
                     </li>
                   );
@@ -57,7 +58,7 @@ const Offres = () => {
               </ul>
             </section>
           </div>
-        </div>
+        
       </section>
     </div>
   );
