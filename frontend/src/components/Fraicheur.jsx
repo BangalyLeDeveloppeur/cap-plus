@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -7,7 +9,7 @@ const Fraicheur = () => {
   const [photosAccueil, setPhotosAccueil] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // ✅ Fonction pour récupérer les images
+  //  Fonction pour récupérer les images
   const fetchAccueil = async () => {
     try {
       const resp = await axios.get("http://localhost:5000/api/photos_accueil");
@@ -17,15 +19,14 @@ const Fraicheur = () => {
     }
   };
 
-  // ✅ On charge les images une seule fois au montage
+  //  On charge les images une seule fois au montage
   useEffect(() => {
     fetchAccueil();
   }, []);
 
-  // ✅ Défilement automatique toutes les 3 secondes
+  //  Défilement automatique toutes les 3 secondes
   useEffect(() => {
-    if (photosAccueil.length === 0) 
-      return;
+    if (photosAccueil.length === 0) return;
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photosAccueil.length);
     }, 3000);
@@ -33,7 +34,7 @@ const Fraicheur = () => {
     return () => clearInterval(interval); // nettoyage
   }, [photosAccueil]);
 
-  // ✅ Boutons suivant / précédent
+  //  Boutons suivant / précédent
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % photosAccueil.length);
   };
@@ -45,12 +46,12 @@ const Fraicheur = () => {
     );
   };
 
-  // ✅ Gestion du "loading"
+  //  Gestion du "loading"
   if (photosAccueil.length === 0) {
     return <p>Chargement des images...</p>;
   }
 
-  // ✅ Image courante
+  //  Image courante
   const currentPhoto = photosAccueil[currentIndex];
 
   return (
@@ -68,7 +69,15 @@ const Fraicheur = () => {
       </div>
 
       <div className="savourer">
-        <button className="savoirPlus">En savoir plus</button>
+        <button
+          className="savoirPlus"
+          onClick={() => {
+            document.getElementById("offre")?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          En savoir plus
+        </button>
+
         <div className="cadreFac">
           <button onClick={prevSlide} aria-label="Image précédente">
             <FontAwesomeIcon icon={faArrowLeft} />

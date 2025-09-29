@@ -25,7 +25,7 @@ const AdOffre = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!image) {
-      setMessage("⚠️ Veuillez choisir une image !");
+      setMessage(" Veuillez choisir une image !");
       return;
     }
 
@@ -40,7 +40,7 @@ const AdOffre = () => {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
-      setMessage("✅ Offre ajoutée avec succès");
+      setMessage(" Offre ajoutée avec succès");
       setTitre("");
       setDescription("");
       setImage(null);
@@ -48,7 +48,7 @@ const AdOffre = () => {
       getOffres();
     } catch (error) {
       console.log("Ajout échoué", error);
-      setMessage("❌ Erreur lors de l'upload");
+      setMessage(" Erreur lors de l'upload");
     }
   };
 

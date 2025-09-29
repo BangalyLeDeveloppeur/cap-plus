@@ -28,6 +28,7 @@ const Offres = () => {
 
         <div className="tab-offres">
   {/* Affichage des offres */}
+  <section id="offre">
   <ul>
     {tabOffre.map((offre) => (
       <li key={offre.id}>
@@ -40,6 +41,7 @@ const Offres = () => {
       </li>
     ))}
   </ul>
+  </section>
 </div>
 
         </div>

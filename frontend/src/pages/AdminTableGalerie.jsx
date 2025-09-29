@@ -43,7 +43,7 @@ const AdminTableGalerie = () => {
       fetchImageGalerie();
     } catch (error) {
       console.log("Ajout échoué", error);
-      setMessage("❌ Erreur lors de l'upload");
+      setMessage(" Erreur lors de l'upload");
     }
   };
 

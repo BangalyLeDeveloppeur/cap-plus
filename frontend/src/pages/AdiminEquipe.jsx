@@ -28,7 +28,7 @@ const AdminEquipe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!image) {
-      setMessage("⚠️ Merci de choisir une image");
+      setMessage(" Merci de choisir une image");
       return;
     }
     ///me permet d'envoyer image+texte dans ma requet http(uploard)
@@ -42,7 +42,7 @@ const AdminEquipe = () => {
       await axios.post("http://localhost:5000/api/equipe", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
-      setMessage("✅ Photo ajoutée avec succès !");
+      setMessage(" Photo ajoutée avec succès !");
       setNom("");
       setImage(null);
       setPrenom;
@@ -51,7 +51,7 @@ const AdminEquipe = () => {
       console.log(formData);
     } catch (error) {
       console.error("Erreur lors de l'upload :", error);
-      setMessage("❌ Erreur lors de l'upload");
+      setMessage(" Erreur lors de l'upload");
     }
   };
 
