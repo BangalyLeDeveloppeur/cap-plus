@@ -50,7 +50,7 @@ const Navigation = () => {
                 <li>PISCICULTURE</li>
               </NavLink>
               <NavLink
-                to="/pisciculturmaraichère"
+                to="/maraichere"
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 onClick={() => setOpen(false)}
               >

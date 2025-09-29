@@ -20,16 +20,20 @@ const Rooter = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="Apropos" element={<Apropos />} />
-          <Route path="AdminPhoto" element={<AdminPhotos />} />
-          <Route path="AdminOffre" element={<Offres />} />
-          <Route path="AdminGalerie" element={<AdminTableGalerie />} />
-          <Route path="Pisciculture" element={<Pisciculture />} />
+          <Route path="apropos" element={<Apropos />} />
+          <Route path="adminphoto" element={<AdminPhotos />} />
+          <Route path="adminoffre" element={<Offres />} />
+          <Route path="admingalerie" element={<AdminTableGalerie />} />
+
+          {/* Offres */}
+          <Route path="pisciculture" element={<Pisciculture />} />
           <Route path="formations" element={<Formations />} />
+          <Route path="maraichere" element={<Maraichage />} />
+          <Route path="mentorat" element={<Mentorat />} />
+
+          {/* Autres */}
           <Route path="contact" element={<Contact />} />
           <Route path="galerie" element={<Galerie />} />
-          <Route path="mentorat" element={<Mentorat />} />
-          <Route path="pisciculturmaraichère" element={<Maraichage />} />
           <Route path="equipe" element={<Equipe />} />
         </Route>
       </Routes>
