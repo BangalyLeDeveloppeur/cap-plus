@@ -54,7 +54,7 @@ const Navigation = () => {
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 onClick={() => setOpen(false)}
               >
-                <li>MARAICHERE</li>
+                <li>MARAICHAGE</li>
               </NavLink>
               <NavLink
                 to="/mentorat"

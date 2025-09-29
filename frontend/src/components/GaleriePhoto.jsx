@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const GaleriePhoto = () => {
   return (
     <div className="engagement">
@@ -10,7 +10,9 @@ const GaleriePhoto = () => {
       <div className="Galerie-contener">
         <span>Photos galerie</span>
       </div>
-      <button className="savoirPlusGal">En savoir plus</button>
+      <Link to={"/Contact"}>
+      <button className="savoirPlusGal">Contact</button>
+      </Link>
     </div>
   );
 };

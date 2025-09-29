@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Main from "../assets/images/main.png";
 
 const Passion = () => {
@@ -30,7 +31,9 @@ const Passion = () => {
           <img src={Main} />
         </div>
       </section>
-      <button className="savoirPlusGal passion">En savoir plus</button>
+      <Link to={"/Contact"}>
+      <button className="savoirPlusGal passion">Contact</button>
+      </Link>
     </div>
   );
 };

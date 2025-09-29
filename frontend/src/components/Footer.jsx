@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logofacebook from "../assets/images/logos_facebook.png";
 import LogoOpenmo from "../assets/images/openmoji_youtube.png";
 import LogoInsta from "../assets/images/skill-icons_instagram.png";
@@ -41,7 +42,9 @@ const Footer = () => {
           <img src={LogoOpenmo} alt="youtub" width="30" />
           <img src={LogoInsta} alt="instatgram" width="30" />
           </div>
+          <Link to={"/Contact"}>
           <button className="savoirPlusF">Contact</button>
+          </Link>
         </div>
       </div>
       <div className="footer-bottom">

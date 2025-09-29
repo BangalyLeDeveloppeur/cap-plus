@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+import { Link } from "react-router-dom";
+
 const Gallerie = () => {
   const [tablegal, setTableGal] = useState([]);
 
@@ -24,8 +26,9 @@ const Gallerie = () => {
           <img src={`http://localhost:5000${dg.image_url}`} alt="dg.titre" />
         </div>
       ))}
-
+<Link to={"/Galerie"}>
       <button className="savoirPlusGal">En savoir plus</button>
+</Link>
     </section>
   );
 };
