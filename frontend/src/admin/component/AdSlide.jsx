@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 ////Déclaration de mes states////
-const AdminPhotos = () => {
+const AdSlide = () => {
   const [photos, setPhotos] = useState([]);
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(null);
@@ -51,7 +51,7 @@ const AdminPhotos = () => {
 
   return (
     <div>
-      <h2>Administration des Photos d'Accueil</h2>
+      <h2>Administration des Photos du slide d'Accueil</h2>
 
       <form onSubmit={handleSubmit}>
         <div>
@@ -95,4 +95,4 @@ const AdminPhotos = () => {
   );
 };
 
-export default AdminPhotos;
+export default AdSlide;
