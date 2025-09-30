@@ -10,9 +10,9 @@ import Pisciculture from "./pages/Pisciculture";
 import Formations from "./pages/Formation";
 import Maraichage from "./pages/Maraichage";
 import Mentorat from "./pages/Mentorat";
-import Galerie from "./pages/Galerie";
-import Contact from "./components/Contact";
-import Equipe from "./pages/AdiminEquipe";
+import AdminAccueil from "./admin/pageadmin/AdminAccueil";
+
+
 
 const Rooter = () => {
   return (
@@ -21,7 +21,7 @@ const Rooter = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="apropos" element={<Apropos />} />
-          <Route path="adminphoto" element={<AdminPhotos />} />
+          <Route path="adminphoto" element={<AdminPhotos />}/>
           <Route path="adminoffre" element={<Offres />} />
           <Route path="admingalerie" element={<AdminTableGalerie />} />
 
@@ -30,12 +30,10 @@ const Rooter = () => {
           <Route path="formations" element={<Formations />} />
           <Route path="maraichere" element={<Maraichage />} />
           <Route path="mentorat" element={<Mentorat />} />
-
-          {/* Autres */}
-          <Route path="contact" element={<Contact />} />
-          <Route path="galerie" element={<Galerie />} />
-          <Route path="equipe" element={<Equipe />} />
         </Route>
+
+          {/* Route pour la page admin accueil*/}
+         <Route path ="/admin" element={<AdminAccueil />} />
       </Routes>
     </BrowserRouter>
   );
