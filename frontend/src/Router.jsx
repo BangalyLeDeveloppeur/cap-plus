@@ -11,6 +11,7 @@ import Formations from "./pages/Formation";
 import Maraichage from "./pages/Maraichage";
 import Mentorat from "./pages/Mentorat";
 import AdminAccueil from "./admin/pageadmin/AdminAccueil";
+import AdminMaraichage from "./admin/pageadmin/AdminMaraichage";
 
 const Rooter = () => {
   return (
@@ -32,6 +33,7 @@ const Rooter = () => {
 
         {/* Route pour la page admin accueil*/}
         <Route path="/admin" element={<AdminAccueil />} />
+          <Route path="adminMaraichage" element={<AdminMaraichage />} />
       </Routes>
     </BrowserRouter>
   );

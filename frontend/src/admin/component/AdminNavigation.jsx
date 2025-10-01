@@ -17,7 +17,7 @@ const AdminNavigation = () => {
         </NavLink>
 
         <NavLink
-          to="/maraichere"
+          to="/AdminMaraichage"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
           <li>MARAICHAGE</li>

@@ -3,6 +3,7 @@ import AdminLayout from "../Layout/AdminLayout";
 import AdminPhotos from "../component/AdSlide";
 import AdOffre from "../component/AdOffre";
 
+
 const AdminAccueil = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const AdminAccueil = () => {
       <AdminLayout />
       <AdminPhotos />
       <AdOffre />
+      
     </div>
   );
 };
