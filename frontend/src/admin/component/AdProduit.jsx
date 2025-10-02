@@ -102,7 +102,7 @@ const AdProduit = () => {
             <img
               src={`http://localhost:5000${pt.image_url}`}
               alt={pt.description}
-              width="150"
+            
             />
             <p>{pt.description}</p>
           </li>
