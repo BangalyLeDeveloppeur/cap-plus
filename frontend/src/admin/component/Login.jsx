@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Navigate, useNavigate } from "react-router-dom";
-
-
 import { useAuth } from "../../components/Authentification.jsx";
 
 const Login = () => {
-  const Navigate = useNavigate()
+  const navigate = useNavigate();
 
   const { setToken } = useAuth();
   const [email, setEmail] = useState("");
@@ -18,14 +16,14 @@ const Login = () => {
 
     const loginData = {
       email: email,
-      password: password
+      password: password,
     };
-    console.log('📤 Données envoyées:', loginData);
+    console.log("📤 Données envoyées:", loginData);
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/administrateur/login", 
-        loginData, 
+        "http://localhost:5000/api/administrateur/login",
+        loginData,
         {
           headers: {
             "Content-Type": "application/json",
@@ -33,20 +31,17 @@ const Login = () => {
         }
       );
 
-      console.log('✅ Réponse reçue:', res.data);
-      
+      console.log("✅ Réponse reçue:", res.data);
+
       // 🔹 Stocke le token dans le contexte et localStorage
       setToken(res.data.token);
       setMessage("Connexion réussie ✅");
-      
-      // Redirection si nécessaire
       navigate("/admin/pageadmin/adminaccueil");
-      
     } catch (error) {
-      console.error(' Erreur détaillée:', {
+      console.error(" Erreur détaillée:", {
         status: error.response?.status,
         data: error.response?.data,
-        message: error.message
+        message: error.message,
       });
       setMessage("Email ou mot de passe incorrect ");
     }

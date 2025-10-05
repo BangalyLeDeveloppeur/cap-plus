@@ -11,7 +11,7 @@ import Pisciculture from "./pages/Pisciculture";
 import Formations from "./pages/Formation";
 import Maraichage from "./pages/Maraichage";
 import Mentorat from "./pages/Mentorat";
-//import AdminAccueil from "./admin/pageadmin/AdminAccueil";
+import AdminAccueil from "./admin/pageadmin/AdminAccueil";
 import AdminMaraichage from "./admin/pageadmin/AdminMaraichage";
 import Login from "./admin/component/Login";
 
@@ -36,7 +36,9 @@ const Rooter = () => {
 
         {/* Route pour la page admin accueil*/}
         <Route path="/admin" element={<Login />} />
-          <Route path="adminMaraichage" element={<AdminMaraichage />} />
+
+          <Route path="adminaccueil" element={<AdminAccueil />} />
+          <Route path="/admin/pageadmin/adminaccueil" element={<AdminAccueil />} />
       </Routes>
     </BrowserRouter>
   );
