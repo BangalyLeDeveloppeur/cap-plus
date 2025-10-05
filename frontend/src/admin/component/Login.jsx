@@ -48,7 +48,7 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={handleLogin}>
+    <form onSubmit={handleLogin} className="form-login">
       <input
         type="email"
         placeholder="Votre email"
