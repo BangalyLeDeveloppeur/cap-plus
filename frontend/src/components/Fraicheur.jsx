@@ -5,9 +5,12 @@ import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+
 const Fraicheur = () => {
   const [photosAccueil, setPhotosAccueil] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+
 
   //  Fonction pour récupérer les images
   const fetchAccueil = async () => {
@@ -35,6 +38,7 @@ const Fraicheur = () => {
   }, [photosAccueil]);
 
   //  Boutons suivant / précédent
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % photosAccueil.length);
   };

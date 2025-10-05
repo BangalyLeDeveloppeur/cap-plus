@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Apropos from "./pages/Apropos";
+import Galerie from "./pages/Galerie";
 import Layout from "./assets/Layout/Layout";
 import AdminPhotos from "./admin/component/AdSlide";
 import Offres from "./admin/component/AdOffre";
@@ -10,8 +11,9 @@ import Pisciculture from "./pages/Pisciculture";
 import Formations from "./pages/Formation";
 import Maraichage from "./pages/Maraichage";
 import Mentorat from "./pages/Mentorat";
-import AdminAccueil from "./admin/pageadmin/AdminAccueil";
+//import AdminAccueil from "./admin/pageadmin/AdminAccueil";
 import AdminMaraichage from "./admin/pageadmin/AdminMaraichage";
+import Login from "./admin/component/Login";
 
 const Rooter = () => {
   return (
@@ -20,6 +22,7 @@ const Rooter = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="apropos" element={<Apropos />} />
+          <Route path="galerie" element={<Galerie />} />
           <Route path="adminphoto" element={<AdminPhotos />} />
           <Route path="adminoffre" element={<Offres />} />
           <Route path="admingalerie" element={<AdminTableGalerie />} />
@@ -32,7 +35,7 @@ const Rooter = () => {
         </Route>
 
         {/* Route pour la page admin accueil*/}
-        <Route path="/admin" element={<AdminAccueil />} />
+        <Route path="/admin" element={<Login />} />
           <Route path="adminMaraichage" element={<AdminMaraichage />} />
       </Routes>
     </BrowserRouter>

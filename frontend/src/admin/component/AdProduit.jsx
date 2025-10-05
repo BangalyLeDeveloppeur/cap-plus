@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useAuth } from "../../components/Authentification";
 
 const AdProduit = () => {
   const [tabProduit, setTabProduit] = useState([]);
@@ -8,6 +9,8 @@ const AdProduit = () => {
   const [description, setDesription] = useState("");
   const [message, setMessage] = useState("");
   const [image, setImage] = useState(null);
+  const{token, setToken} = useAuth()
+  console.log(token)
  
 
   const getProduit = async () => {
@@ -41,7 +44,9 @@ const AdProduit = () => {
     try {
       await axios.post("http://localhost:5000/api/produit", formData, {
 
-            headers: {"Content-Type": "multipart/form-data"},
+            headers: {"Content-Type": "multipart/form-data",
+              "Authorization": "Bearer " + localStorage.getItem("token"),
+            },
         });
 
         setMessage("Produit ajouté avec succès")
