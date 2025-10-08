@@ -12,8 +12,8 @@ import Formations from "./pages/Formation";
 import Maraichage from "./pages/Maraichage";
 import Mentorat from "./pages/Mentorat";
 import AdminAccueil from "./admin/pageadmin/AdminAccueil";
-import AdminMaraichage from "./admin/pageadmin/AdminMaraichage";
 import Login from "./admin/component/Login";
+import Contact from "./components/Contact";
 
 const Rooter = () => {
   return (
@@ -23,6 +23,8 @@ const Rooter = () => {
           <Route index element={<Home />} />
           <Route path="apropos" element={<Apropos />} />
           <Route path="galerie" element={<Galerie />} />
+          <Route path="contact" element={<Contact />} />
+
           <Route path="adminphoto" element={<AdminPhotos />} />
           <Route path="adminoffre" element={<Offres />} />
           <Route path="admingalerie" element={<AdminTableGalerie />} />

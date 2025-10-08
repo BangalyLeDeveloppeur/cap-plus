@@ -907,4 +907,13 @@ button.savoirPlusGal.ptonn {
 .form-login input {
   height: 50px;
   width: 50%;
+}
+
+.map-container {
+  text-align: center;
+}
+
+.carteMap {
+  height: 400px;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
