@@ -626,6 +626,7 @@ button.savoirPlusGal.ptonn {
 
 .passion {
   margin-left: 25%;
+  margin-top: -80px;
 }
 
 .pton {
@@ -911,6 +912,7 @@ button.savoirPlusGal.ptonn {
 
 .map-container {
   text-align: center;
+  font-size: 2rem;
 }
 
 .carteMap {
