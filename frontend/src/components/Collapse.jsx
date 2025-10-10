@@ -1,22 +1,26 @@
+// src/components/DynamicParagraph.js
 import React from 'react';
+import { useContent } from '../admin/Hook';
 
+const Collapse = ({ 
+  page, 
+  section, 
+  defaultContent, 
+  as: Component = "p",
+  showTitle = false,
+  titleLevel = "h1",
+  ...props 
+}) => {
+  const content = useContent(page, section, defaultContent);
 
-const Collapse = ({ title, content }) => {
-    const [open, setOpen] = useState(false);
-  // collapse pour la fermeture et ouverture au click sur les chevrons//
-    const handleChangeOpen = () => {
-        setOpen(!open);
-    };
-   
+  const TitleTag = titleLevel;
+
   return (
-    <div className="apropos-descrition">
-      <div className="description">
-        <h2>{title}</h2>
-        <button onClick={() => handleChangeOpen()}>
-          <i className="fa-solid fa-chevron-up"></i>
-        </button>
-      </div>
-      {open ? content : ""}
+    <div {...props}>
+      {showTitle && content.titre && <TitleTag>{content.titre}</TitleTag>}
+      <Component>{content.contenu}</Component>
     </div>
   );
 };
+
+export default Collapse;

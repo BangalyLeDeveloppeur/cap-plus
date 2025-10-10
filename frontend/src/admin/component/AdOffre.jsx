@@ -54,55 +54,40 @@ const AdOffre = () => {
 
   return (
     <div>
-      <h2>Administration de la table Offres</h2>
+      <section className="admin-section">
+        <h1 className="titre">Administration de la table Offres</h1>
+        {message && <p>{message}</p>}
 
-      {message && <p>{message}</p>}
-
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Titre :</label>
-          <input
-            type="text"
-            value={titre}
-            onChange={(e) => setTitre(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Description :</label>
-          <input
-            type="text"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Image :</label>
-          <input
-            type="file"
-            onChange={(e) => setImage(e.target.files[0])}
-            required
-          />
-        </div>
-        <button type="submit">Ajouter</button>
-      </form>
-
-      {/* Affichage des offres */}
-      <h3>Liste des offres</h3>
-      <ul>
-        {tabOffre.map((offre) => (
-          <li key={offre.id}>
-            <h4>{offre.titre}</h4>
-            <p>{offre.description}</p>
-            <img
-              src={`http://localhost:5000${offre.image_url}`}
-              alt={offre.titre}
-              width="150"
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label>Titre :</label>
+            <input
+              type="text"
+              value={titre}
+              onChange={(e) => setTitre(e.target.value)}
+              required
             />
-          </li>
-        ))}
-      </ul>
+          </div>
+          <div>
+            <label>Description :</label>
+            <input
+              type="text"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <label>Image :</label>
+            <input
+              type="file"
+              onChange={(e) => setImage(e.target.files[0])}
+              required
+            />
+          </div>
+          <button type="submit">Ajouter</button>
+        </form>
+      </section>
     </div>
   );
 };

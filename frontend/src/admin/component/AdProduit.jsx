@@ -64,7 +64,7 @@ const AdProduit = () => {
   };
 
   return <div>
-    <h2>Administration de la table produit</h2>
+    <h1 className="titre">Administration de la table produit</h1>
 
       {message && <p>{message}</p>}
 

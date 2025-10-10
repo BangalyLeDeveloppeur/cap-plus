@@ -49,7 +49,7 @@ const AdminTableGalerie = () => {
   };
 
   return <div>
-     <h2>Administration de la table galerie</h2>
+     <h1 className="titre">Administration de la table galerie</h1>
 
       {message && <p>{message}</p>}
 

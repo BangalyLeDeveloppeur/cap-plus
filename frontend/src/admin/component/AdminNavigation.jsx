@@ -17,12 +17,12 @@ const AdminNavigation = () => {
   return (
     <div className="navigation">
       <ul>
-        <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+        <NavLink to="/home" className={(nav) => (nav.isActive ? "nav-active" : "")}>
           <li>HOME</li>
         </NavLink>
 
         <NavLink
-          to="/Apropos"
+          to="/adiminApropos"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
           <li>A PROPOS</li>
@@ -36,7 +36,7 @@ const AdminNavigation = () => {
         </NavLink>
 
         <NavLink
-          to="/galerie"
+          to="/AdminGal"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
           <li>GALERIE</li>

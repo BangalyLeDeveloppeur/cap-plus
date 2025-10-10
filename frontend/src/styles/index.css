@@ -260,8 +260,8 @@ li:hover {
 .cadreFac svg.svg-inline--fa.fa-arrow-left,
 .cadreFac svg.svg-inline--fa.fa-arrow-right,
 .cadreFac button {
-  margin-top: -230px;
-  font-size: 3rem;
+  margin-top: -29px;
+  font-size: 2rem;
   color: #4dd3ed;
   background: transparent;
   border: none;
@@ -918,4 +918,70 @@ button.savoirPlusGal.ptonn {
 .carteMap {
   height: 400px;
   width: 100%;
+}
+
+.admin-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.admin-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.admin-section form input {
+  height: 50px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.admin-section button {
+  height: 30px;
+  width: 50%;
+  border-radius: 10px;
+  background: rgb(18, 135, 202);
+}
+
+.admin-grid-conteneur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.titre {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

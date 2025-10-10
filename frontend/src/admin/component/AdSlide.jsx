@@ -51,46 +51,36 @@ const AdSlide = () => {
 
   return (
     <div>
-      <h2>Administration des Photos du slide d'Accueil</h2>
+      <section className="admin-section">
+        <h1 className="titre"> Home du slide d'Accueil</h1>
 
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Description :</label>
-          <input
-            type="text"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label>Image :</label>
-          <input
-            type="file"
-            onChange={(e) => setImage(e.target.files[0])}
-            required
-          />
-        </div>
-
-        <button type="submit">Ajouter</button>
-      </form>
-
-      {message && <p>{message}</p>}
-
-      <h3>Photos enregistrées :</h3>
-      <ul>
-        {photos.map((photo) => (
-          <li key={photo.id}>
-            <img
-              src={`http://localhost:5000${photo.image_url}`}
-              alt={photo.description}
-              width="150"
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label>Description :</label>
+            <input
+              type="text"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              required
             />
-            <p>{photo.description}</p>
-          </li>
-        ))}
-      </ul>
+          </div>
+
+          <div>
+            <label>Image :</label>
+            <input
+              type="file"
+              onChange={(e) => setImage(e.target.files[0])}
+              required
+            />
+          </div>
+
+          <button type="submit" className="botton">Ajouter</button>
+        </form>
+
+        {message && <p>{message}</p>}
+
+        <h3>Photos enregistrées :</h3>
+      </section>
     </div>
   );
 };
